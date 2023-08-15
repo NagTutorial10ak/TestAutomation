@@ -38,6 +38,7 @@ public class TestReport{
 		extentD = new ExtentReports(System.getProperty("user.dir")+"//Reports//"+folderName+"//"+filename, true,DisplayOrder.NEWEST_FIRST);
 		extentDwss = new ExtentReports(System.getProperty("user.dir")+"//Reports//"+folderName+"//"+filenamess, true,DisplayOrder.NEWEST_FIRST);
 		reportPath=System.getProperty("user.dir")+"//Reports//"+folderName;
+		
 
 	}
 
@@ -180,6 +181,7 @@ public class TestReport{
 	}
 
 	public static void endReport() {
+	
 		extentD.flush();
 		extentDwss.flush();
 		extentD.close();

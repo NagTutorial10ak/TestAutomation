@@ -27,6 +27,7 @@ public class Hook {
 			scenario.attach(((TakesScreenshot)DriverFactory.getCurrentDriver()).getScreenshotAs(OutputType.BYTES), "", "image/jpeg");
 			
 		}
+		
 		TestReport.appendParent();
 		TestReport.endParent();
 		TestReport.endReport();
